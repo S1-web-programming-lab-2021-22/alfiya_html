@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+h2{
+font-size :30px;
+color : red;
+font-weight : bold;
+text-decoration : underline;
+}
+</style>
+</head>
+<body>
+<center>
+<h2>check if numer is positive or negative</h2>
+<br>
+<br>
+<label>Enter the number:
+<input type="text" id="num"></label>
+<button onclick="ispositive()">Check</button>
+<p id="b"></p>
+
+<script>
+function ispositive()
+{
+var x=document.getElementById("num").value;
+if(x>0)
+{
+document.getElementById("b").innerHTML = x +"is positive number";
+}
+else if(x<0)
+{
+document.getElementById("b").innerHTML= x +"is negative number";
+}
+else
+{
+alert("you have entered 0 or character value")
+}
+}
+</script>
+</body>
+</html>
+
+
+
